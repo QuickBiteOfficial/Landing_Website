@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - QuickBite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .step-section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .step-section:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+        
+        .step-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .step-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-image {
+            max-width: 100%;
+            height: auto;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .step-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">QuickBite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="how-it-works.html">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- How It Works Header -->
+    <section class="hero text-center" style="margin-top: 80px; background: white; color: #222;">
+        <div class="container">
+            <h1 class="gradient-title">How QuickBite Works</h1>
+            <p class="lead">Simple steps to get your food faster</p>
+            <p style="max-width:700px;margin:auto;">QuickBite is designed to make your dining experience as smooth as possible. Here's how you can use our platform to order, pay, and enjoy your meal with ease—whether you're at the restaurant or picking up your food.</p>
+        </div>
+    </section>
+
+    <!-- Step 1 -->
+    <section class="step-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h2>Select & Order</h2>
+                        <p class="lead">Open the app, choose your restaurant, browse the menu, and place your order with just a few taps.</p>
+                        <div class="step-card mt-4">
+                            <h4>Easy Ordering</h4>
+                            <p>Browse through restaurant menus, select your items, and pay securely through the app. No more waiting for a server or standing in line—just a few taps and your order is on its way to the kitchen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="ribbon-anim ribbon-smooth-anim">
+                        <svg viewBox="0 0 600 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="waveGradient1" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4B2B"/>
+                                    <stop offset="1" stop-color="#FFB88C"/>
+                                </linearGradient>
+                            </defs>
+                            <path id="wavePath1" d="M0 40 Q 75 40, 150 40 T 300 40 T 450 40 T 600 40" stroke="url(#waveGradient1)" stroke-width="8" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="step-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h2>Restaurant Prepares</h2>
+                        <p class="lead">The restaurant receives your order instantly and starts preparing your food.</p>
+                        <div class="step-card mt-4">
+                            <h4>Real-time Updates</h4>
+                            <p>Track your order status as the restaurant prepares your meal. You'll receive notifications when your food is being cooked, when it's almost ready, and when it's time to pick up or wait for delivery to your table.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 text-center">
+                    <div class="ribbon-anim ribbon-smooth-anim">
+                        <svg viewBox="0 0 600 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="waveGradient2" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4B2B"/>
+                                    <stop offset="1" stop-color="#FFB88C"/>
+                                </linearGradient>
+                            </defs>
+                            <path id="wavePath2" d="M0 40 Q 75 40, 150 40 T 300 40 T 450 40 T 600 40" stroke="url(#waveGradient2)" stroke-width="8" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="step-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h2>Ready for Pickup or Table Delivery</h2>
+                        <p class="lead">Get notified when your order is ready for pickup or delivery to your table.</p>
+                        <div class="step-card mt-4">
+                            <h4>Flexible Service</h4>
+                            <p>Choose between pickup or table service based on the restaurant's offerings. If you're dining in, just enter your table number and your food will be brought to you. If you're picking up, you'll know exactly when your order is ready—no more waiting around.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="ribbon-anim ribbon-smooth-anim">
+                        <svg viewBox="0 0 600 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="waveGradient3" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4B2B"/>
+                                    <stop offset="1" stop-color="#FFB88C"/>
+                                </linearGradient>
+                            </defs>
+                            <path id="wavePath3" d="M0 40 Q 75 40, 150 40 T 300 40 T 450 40 T 600 40" stroke="url(#waveGradient3)" stroke-width="8" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Paragraph -->
+    <section class="py-5" style="background:#f8f9fa;">
+        <div class="container text-center">
+            <h3 class="mb-3" style="font-weight:700;">Experience the Future of Dining</h3>
+            <p style="max-width:700px;margin:auto;">QuickBite is here to make your restaurant visits faster, easier, and more enjoyable. Try it today and see how simple great dining can be!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>QuickBite</h4>
+                    <p>Making dining easier, one order at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Contact us: <a href="mailto:thequickbiteofficial@gmail.com">thequickbiteofficial@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Smooth, elegant sine wave animation for all ribbons
+    function animateSmoothWave(id, phaseOffset = 0) {
+        const path = document.getElementById(id);
+        let t = 0;
+        function animate() {
+            t += 0.025;
+            let d = 'M0 40 ';
+            for (let i = 1; i <= 8; i++) {
+                const x = i * 75;
+                // Subtle, smooth sine wave
+                const y = 40 + Math.sin(t + i * 0.5 + phaseOffset) * 10;
+                d += `Q ${x - 37.5} ${40 + Math.sin(t + (i - 0.5) * 0.5 + phaseOffset) * 10}, ${x} ${y} `;
+            }
+            path.setAttribute('d', d);
+            requestAnimationFrame(animate);
+        }
+        animate();
+    }
+    if (document.readyState !== 'loading') {
+        animateSmoothWave('wavePath1', 0);
+        animateSmoothWave('wavePath2', Math.PI / 2);
+        animateSmoothWave('wavePath3', Math.PI);
+    } else {
+        document.addEventListener('DOMContentLoaded', () => {
+            animateSmoothWave('wavePath1', 0);
+            animateSmoothWave('wavePath2', Math.PI / 2);
+            animateSmoothWave('wavePath3', Math.PI);
+        });
+    }
+    </script>
+</body>
+</html> 
